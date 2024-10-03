@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informe de Colocación de Pasantes</title>
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Enlace a la biblioteca Chart.js desde CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <!-- Cabecera con logo y títulos -->
+    <header>
+      <div class="logo-container">
+        <img src="logo.png" alt="Logo del Instituto" class="logo" />
+      </div>
+      <h1 class="page-title">
+        Instituto Politécnico Salesiano Padre Bartolomé Vegh
+      </h1>
+      <h3 class="sub-title">Oficina de Vinculación Sectorial</h3>
+      <p class="additional-text">
+        Integración de Estudiantes en el Programa de Formación en Centros de
+        Trabajo 2024-2025
+      </p>
+      <!-- Navegación -->
+      <nav>
+        <ul>
+          <li><a href="#introduccion">Introducción</a></li>
+          <li><a href="#analisis">Análisis de Datos</a></li>
+          <li><a href="#graficos">Gráficos Estadísticos</a></li>
+          <li><a href="#conclusiones">Conclusiones</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenedor principal -->
+    <main>
+      <!-- Sección de Introducción -->
+      <section id="introduccion">
+        <h2>Introducción</h2>
+        <p>
+          Este informe presenta un análisis detallado de la colocación de
+          pasantes en diversas empresas durante el período 2024-2025. Se abordan
+          aspectos como la distribución por meses, áreas técnicas, y las
+          empresas colaboradoras, con el objetivo de identificar tendencias y
+          áreas de mejora.
+        </p>
+      </section>
+
+      <!-- Sección de Análisis de Datos -->
+      <section id="analisis">
+        <h2>Análisis de Datos</h2>
+        <p>
+          A continuación, se presenta una tabla con la información recopilada
+          sobre la colocación de pasantes en diferentes empresas, áreas técnicas
+          y fechas.
+        </p>
+        <!-- Tabla de información de pasantes -->
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Área Técnica</th>
+                <th>Fecha de colocación</th>
+                <th>Empresa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Filas de datos -->
+              <tr>
+                <td>Meriyen Rodríguez González</td>
+                <td>Informática</td>
+                <td>31/08/2024</td>
+                <td>Librería Solano</td>
+              </tr>
+              <tr>
+                <td>Juan José Cavallo Pérez</td>
+                <td>Informática</td>
+                <td>3/09/2024</td>
+                <td>Hogar Escuela Rosa Duarte</td>
+              </tr>
+              <tr>
+                <td>Cesar Elias Encarnación Perez</td>
+                <td>Informática</td>
+                <td>4/09/2024</td>
+                <td>Haina internacional terminals (HIT)</td>
+              </tr>
+              <tr>
+                <td>Yoswalt Danner Sanchez de león</td>
+                <td>Informática</td>
+                <td>4/09/2024</td>
+                <td>creation studio</td>
+              </tr>
+              <tr>
+                <td>Frankerlyn Ernesto Vazquez González</td>
+                <td>Informática</td>
+                <td>4/09/2024</td>
+                <td>Creation Studio</td>
+              </tr>
+              <tr>
+                <td>Héctor José Rodríguez Marión</td>
+                <td>Informática</td>
+                <td>4/09/2024</td>
+                <td>Administradora de Subsidios Sociales</td>
+              </tr>
+              <tr>
+                <td>Fuad Salomón Estevez</td>
+                <td>Informática</td>
+                <td>4/09/2024</td>
+                <td>Superintendencia de electricidad</td>
+              </tr>
+              <tr>
+                <td>Melissa Esther Fragoso Vargas</td>
+                <td>Informática</td>
+                <td>4/09/2024</td>
+                <td>Librería Solano</td>
+              </tr>
+              <tr>
+                <td>Gabriel Aneudy Reyes Gómez</td>
+                <td>Informática</td>
+                <td>11/09/2024</td>
+                <td>Frederic Schad Logistics</td>
+              </tr>
+              <tr>
+                <td>Jose Miguel Aquino Jiménez</td>
+                <td>Informática</td>
+                <td>11/09/2024</td>
+                <td>Instituto Nacional de Bienestar Estudiantil</td>
+              </tr>
+              <tr>
+                <td>Allan Dytren Hernandez</td>
+                <td>Informática</td>
+                <td>11/09/2024</td>
+                <td>Soler Computer</td>
+              </tr>
+              <tr>
+                <td>Johan Alejandro La Rosa Guaicara</td>
+                <td>Informática</td>
+                <td>14/09/2024</td>
+                <td>CrediCefi</td>
+              </tr>
+              <tr>
+                <td>Crismery Castillo Encarnación</td>
+                <td>Informática</td>
+                <td>18/09/2024</td>
+                <td>Alcaldía Del Distrito Nacional</td>
+              </tr>
+              <tr>
+                <td>Deslin Ramírez</td>
+                <td>Informática</td>
+                <td>25/09/2024</td>
+                <td>Marítima Dominicana</td>
+              </tr>
+              <tr>
+                <td>Eliseo Manase Ovilus Leyba</td>
+                <td>Informática</td>
+                <td>25/09/2024</td>
+                <td>UASD edificio administrativo</td>
+              </tr>
+              <tr>
+                <td>Fabián Pérez Gil</td>
+                <td>Informática</td>
+                <td>25/09/2024</td>
+                <td>Renovable Energy VIMIESA S.R.L.</td>
+              </tr>
+              <tr>
+                <td>María Fernanda Acosta González</td>
+                <td>Informática</td>
+                <td>25/09/2024</td>
+                <td>Alcaldía del Distrito Nacional</td>
+              </tr>
+              <tr>
+                <td>Alibel Amador Caba</td>
+                <td>Informática</td>
+                <td>25/09/2024</td>
+                <td>Alcaldía del Distrito Nacional</td>
+              </tr>
+              <tr>
+                <td>Diego Fernando Pinales Damián</td>
+                <td>Mercadeo</td>
+                <td>11/09/2024</td>
+                <td>Áster Tecnodisa</td>
+              </tr>
+              <tr>
+                <td>Ancy francime Joseph</td>
+                <td>Mercadeo</td>
+                <td>28/08/2024</td>
+                <td>José Aracena Inversiones</td>
+              </tr>
+              <tr>
+                <td>Beydaris Sención Méndez</td>
+                <td>Mercadeo</td>
+                <td>19/08/2024</td>
+                <td>Multimedios del Caribe</td>
+              </tr>
+              <tr>
+                <td>Yaemely Humeau</td>
+                <td>Mercadeo</td>
+                <td>4/09/2024</td>
+                <td>Casas del siglo XIX</td>
+              </tr>
+              <tr>
+                <td>Valeri Rodríguez Torchio</td>
+                <td>Mercadeo</td>
+                <td>8/08/2024</td>
+                <td>Sistemas electrónicos avanzados, SRL</td>
+              </tr>
+              <tr>
+                <td>Heinny Stephany Medrano Reyes</td>
+                <td>Mercadeo</td>
+                <td>4/09/2024</td>
+                <td>Laboratorio Referencia</td>
+              </tr>
+              <tr>
+                <td>Arianny González Meléndez</td>
+                <td>Mercadeo</td>
+                <td>1/08/2024</td>
+                <td>Servicios y Soluciones promocionales</td>
+              </tr>
+              <tr>
+                <td>Walkiry Batista Alexis</td>
+                <td>Mercadeo</td>
+                <td>4/09/2024</td>
+                <td>Inversiones Josxa, S.R.L</td>
+              </tr>
+              <tr>
+                <td>Moises Santana Gonzales</td>
+                <td>Mercadeo</td>
+                <td>4/09/2024</td>
+                <td>Universidad APEC</td>
+              </tr>
+              <tr>
+                <td>Janmelis María Soto Alberto</td>
+                <td>Mercadeo</td>
+                <td>4/09/2024</td>
+                <td>Checklist promociones</td>
+              </tr>
+              <tr>
+                <td>Ivonne Ramirez Fortuna</td>
+                <td>Mercadeo</td>
+                <td>4/09/2024</td>
+                <td>Autoridad portuaria dominicana</td>
+              </tr>
+              <tr>
+                <td>Serena Adonays Pérez</td>
+                <td>Mercadeo</td>
+                <td>18/09/2024</td>
+                <td>Ferretería Fuente de Amor</td>
+              </tr>
+              <tr>
+                <td>Karen alexandra novas vargas</td>
+                <td>Mercadeo</td>
+                <td>4/09/2024</td>
+                <td>F & L comercial</td>
+              </tr>
+              <tr>
+                <td>Aisha Michelle Almonte Nuñez</td>
+                <td>Mercadeo</td>
+                <td>11/09/2024</td>
+                <td>Santo Domingo Country Club</td>
+              </tr>
+              <tr>
+                <td>Mariyeilis Valdez lebron</td>
+                <td>Mercadeo</td>
+                <td>11/09/2024</td>
+                <td>Supermercado caribe</td>
+              </tr>
+              <tr>
+                <td>Melissa ramirez bueno</td>
+                <td>Mercadeo</td>
+                <td>28/08/2024</td>
+                <td>Clínica Independencia</td>
+              </tr>
+              <tr>
+                <td>Steysy Nicole Alcántara Peña</td>
+                <td>Mercadeo</td>
+                <td>25/09/2024</td>
+                <td>Banreservas</td>
+              </tr>
+              <tr>
+                <td>Perla Maite Ureña Montero</td>
+                <td>Mercadeo</td>
+                <td>4/09/2024</td>
+                <td>Instituto Nacional de Bienestar Estudiantil</td>
+              </tr>
+              <tr>
+                <td>Amelie Pereyra Matos</td>
+                <td>Mercadeo</td>
+                <td>18/09/2024</td>
+                <td>Ministerio de agricultura</td>
+              </tr>
+              <tr>
+                <td>Jostin Humberto</td>
+                <td>Mercadeo</td>
+                <td>18/09/2024</td>
+                <td>Clínica independencia</td>
+              </tr>
+              <tr>
+                <td>Moises Santana Gonzales</td>
+                <td>Mercadeo</td>
+                <td>4/09/2024</td>
+                <td>Universidad APEC</td>
+              </tr>
+              <tr>
+                <td>Estefany Guzmán Cipión</td>
+                <td>Mercadeo</td>
+                <td>4/09/2024</td>
+                <td>La Forchetta</td>
+              </tr>
+              <tr>
+                <td>Bairon Manuel Feliz Valdez</td>
+                <td>Electricidad</td>
+                <td>07/08/2024</td>
+                <td>Empresa de Transmisión Eléctrica Dominicana</td>
+              </tr>
+              <tr>
+                <td>Sumeily Bernabel</td>
+                <td>Electricidad</td>
+                <td>21/08/2024</td>
+                <td>Empresa de Transmisión Eléctrica Dominicana</td>
+              </tr>
+              <tr>
+                <td>Yendry Wilberto Lantigua Laureano</td>
+                <td>Electricidad</td>
+                <td>21/08/2024</td>
+                <td>ETED / CDEEE</td>
+              </tr>
+              <tr>
+                <td>Nayrelin Antigua Roque</td>
+                <td>Electricidad</td>
+                <td>21/08/2024</td>
+                <td>ETED / CDEEE</td>
+              </tr>
+              <tr>
+                <td>Obidio Rivera Turbi</td>
+                <td>Electricidad</td>
+                <td>28/08/2024</td>
+                <td>Ferretería Fuente de Amor</td>
+              </tr>
+              <tr>
+                <td>Ashley Henríquez Suero</td>
+                <td>Electricidad</td>
+                <td>31/08/2024</td>
+                <td>Adonai Importaciones</td>
+              </tr>
+              <tr>
+                <td>Kenlee Emmanuel Cruz Alcántara</td>
+                <td>Electricidad</td>
+                <td>04/09/2024</td>
+                <td>Hospital Municipal Mata Hambre</td>
+              </tr>
+              <tr>
+                <td>Ivette Patricia Abreu Marmolejos</td>
+                <td>Electricidad</td>
+                <td>04/09/2024</td>
+                <td>Ferretería Fuente de Amor</td>
+              </tr>
+              <tr>
+                <td>Javier Sabino Adino</td>
+                <td>Electricidad</td>
+                <td>11/09/2024</td>
+                <td>IPSPBV</td>
+              </tr>
+              <tr>
+                <td>Ramón José Encarnación Cuevas</td>
+                <td>Electricidad</td>
+                <td>11/09/2024</td>
+                <td>IPSPBV</td>
+              </tr>
+              <tr>
+                <td>Cristopher Jacko Chevalier</td>
+                <td>Electricidad</td>
+                <td>11/09/2024</td>
+                <td>IPSPBV</td>
+              </tr>
+              <tr>
+                <td>Juan Amaury Aristy Bello</td>
+                <td>Electricidad</td>
+                <td>25/09/2024</td>
+                <td>Gerencia Nacional Control & Protección</td>
+              </tr>
+              <tr>
+                <td>Eudis José Sosa Cordero</td>
+                <td>Electricidad</td>
+                <td>02/10/2024</td>
+                <td>Caribe Express</td>
+              </tr>
+              <tr>
+                <td>Onelys Alondra Hernández Cabral</td>
+                <td>Logística</td>
+                <td>19/06/2024</td>
+                <td>Instituto Nacional de Bienestar Estudiantil</td>
+              </tr>
+              <tr>
+                <td>Ruth Estefany Abreu Jáquez</td>
+                <td>Logística</td>
+                <td>23/07/2024</td>
+                <td>Junta Central Electoral</td>
+              </tr>
+              <tr>
+                <td>Luis Alberto Perez</td>
+                <td>Logística</td>
+                <td>17/07/2024</td>
+                <td>Banreservas</td>
+              </tr>
+              <tr>
+                <td>Sahily Michelle Avila Hernandez</td>
+                <td>Logística</td>
+                <td>28/07/2024</td>
+                <td>Pick n’ send</td>
+              </tr>
+              <tr>
+                <td>Lisbeth Marie Díaz Reynoso</td>
+                <td>Logística</td>
+                <td>25/07/2024</td>
+                <td>Instituto Postal Dominicano</td>
+              </tr>
+              <tr>
+                <td>Chantal Marie Capellán</td>
+                <td>Logística</td>
+                <td>28/08/2024</td>
+                <td>Referencia Laboratorio Clínico</td>
+              </tr>
+              <tr>
+                <td>Emanuel Jesús Soriano Mena</td>
+                <td>Logística</td>
+                <td>28/08/2024</td>
+                <td>Fresenius Kabi</td>
+              </tr>
+              <tr>
+                <td>Yaisa Ogando Mueses</td>
+                <td>Logística</td>
+                <td>28/08/2024</td>
+                <td>Casa de España</td>
+              </tr>
+              <tr>
+                <td>Katherine Florián Veloz</td>
+                <td>Logística</td>
+                <td>28/08/2024</td>
+                <td>Plaza Luperón</td>
+              </tr>
+              <tr>
+                <td>Leslie Nicole Agramonte Rivera</td>
+                <td>Logística</td>
+                <td>04/09/2024</td>
+                <td>MCW Marketing Group</td>
+              </tr>
+              <tr>
+                <td>Eydhan Rafael De Oleo Brito</td>
+                <td>Logística</td>
+                <td>04/09/2024</td>
+                <td>Mundo Cargó Dominicana</td>
+              </tr>
+              <tr>
+                <td>Angel Luis Montero Rosario</td>
+                <td>Logística</td>
+                <td>04/09/2024</td>
+                <td>Laboratorios Nacionales de Metrología del INDOCAL</td>
+              </tr>
+              <tr>
+                <td>Henyeli Massiel Hernández Recio</td>
+                <td>Logística</td>
+                <td>04/09/2024</td>
+                <td>Banco de Ahorro y Crédito COFACI, S.A</td>
+              </tr>
+              <tr>
+                <td>Elvis Sadiel Campusano Valera</td>
+                <td>Logística</td>
+                <td>11/09/2024</td>
+                <td>Autoridad Portuaria Dominicana</td>
+              </tr>
+              <tr>
+                <td>Asusena Pérez García</td>
+                <td>Logística</td>
+                <td>11/09/2024</td>
+                <td>Acromax Dominicana</td>
+              </tr>
+              <tr>
+                <td>Rubenia Fernández Coronado</td>
+                <td>Logística</td>
+                <td>11/09/2024</td>
+                <td>Autoridad Portuaria Dominicana</td>
+              </tr>
+              <tr>
+                <td>Maia Lina Martínez Rosario</td>
+                <td>Logística</td>
+                <td>11/09/2024</td>
+                <td>Autoridad Portuaria Dominicana</td>
+              </tr>
+              <tr>
+                <td>Jailyn Marit Matos Feliz</td>
+                <td>Logística</td>
+                <td>18/09/2024</td>
+                <td>Junta Central Electoral</td>
+              </tr>
+              <tr>
+                <td>Yisel Hid</td>
+                <td>Logística</td>
+                <td>18/09/2024</td>
+                <td>Seguros Patria</td>
+              </tr>
+              <tr>
+                <td>Elisainny Cuevas Ramírez</td>
+                <td>Logística</td>
+                <td>18/09/2024</td>
+                <td>Ferretería Pappaterra Montolío</td>
+              </tr>
+              <tr>
+                <td>Antony Uriel Arias Peralta</td>
+                <td>Logística</td>
+                <td>18/09/2024</td>
+                <td>Delta Comercial, S.A.</td>
+              </tr>
+              <tr>
+                <td>Helen Mariel Feliz Batista</td>
+                <td>Logística</td>
+                <td>25/09/2024</td>
+                <td>Marítima Dominicana</td>
+              </tr>
+              <tr>
+                <td>Yunaris De Oleo Brito</td>
+                <td>Logística</td>
+                <td>25/09/2024</td>
+                <td>Marítima Dominicana</td>
+              </tr>
+              <tr>
+                <td>Wilmelys López Aquino</td>
+                <td>Logística</td>
+                <td>25/09/2024</td>
+                <td>Marítima Dominicana</td>
+              </tr>
+              <tr>
+                <td>Andrea Mercedes Mejía Roa</td>
+                <td>Logística</td>
+                <td>25/09/2024</td>
+                <td>Marítima Dominicana</td>
+              </tr>
+              <tr>
+                <td>Ashley Matos Turbi</td>
+                <td>Logística</td>
+                <td>28/08/2024</td>
+                <td>Casa de España</td>
+              </tr>
+              <tr>
+                <td>Lisamel Janeris De La Paz</td>
+                <td>Logística</td>
+                <td>02/10/2024</td>
+                <td>Mundo Cargo Dominicana</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Sección de Gráficos Estadísticos -->
+      <section id="graficos">
+        <h2>Gráficos Estadísticos</h2>
+        <!-- Gráfico de Colocaciones por Mes -->
+        <div class="chart-container">
+          <canvas
+            id="colocacionesPorMesChart"
+            aria-label="Gráfico de Colocaciones por Mes"
+            role="img"
+          ></canvas>
+        </div>
+        <!-- Gráfico de Distribución por Área Técnica -->
+        <div class="chart-container">
+          <canvas
+            id="distribucionAreaTecnicaChart"
+            aria-label="Gráfico de Distribución por Área Técnica"
+            role="img"
+          ></canvas>
+        </div>
+        <!-- Gráfico de Empresas con Mayor Número de Colocaciones -->
+        <div class="chart-container">
+          <canvas
+            id="empresasTopChart"
+            aria-label="Gráfico de Empresas con Mayor Número de Colocaciones"
+            role="img"
+          ></canvas>
+        </div>
+      </section>
+
+      <!-- Sección de Conclusiones -->
+      <section id="conclusiones">
+        <h2>Conclusiones</h2>
+        <p>
+          El análisis realizado revela que septiembre 2024 es el mes con mayor
+          número de colocaciones de pasantes, principalmente en el área de
+          Informática y Mercadeo. Las empresas como Marítima Dominicana y la
+          Autoridad Portuaria Dominicana destacan por su alto número de
+          colaboraciones. Se recomienda fortalecer las relaciones con estas
+          empresas para futuras ediciones del programa.
+        </p>
+      </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+      <p>
+        &copy; 2024 Instituto Politécnico Salesiano Padre Bartolomé Vegh. Todos
+        los derechos reservados.
+      </p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
